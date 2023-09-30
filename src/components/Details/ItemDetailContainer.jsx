@@ -5,9 +5,9 @@ import useFetch from '../../hooks/useFetch';
 
 
 
-const ItemDetailContainer = () => {
+const ItemDetailContainer = ({id}) => {
     
-    const [item] = useFetch("https://fakestoreapi.com/products/2")
+    const [item] = useFetch(`https://fakestoreapi.com/products/${id}`)
     
         
     return (

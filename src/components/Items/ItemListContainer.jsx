@@ -7,7 +7,7 @@ import useFetch from '../../hooks/useFetch';
 const ItemListContainer = () => {
     const [items] = useFetch("https://fakestoreapi.com/products")
   return (
-    <Container>
+    <Container className='bg-dark'>
         <Row>
             {items !== null && 
             <ItemList items = {items} />

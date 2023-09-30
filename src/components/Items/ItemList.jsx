@@ -2,6 +2,7 @@ import React from 'react'
 import { Col } from 'react-bootstrap'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
 const ItemList = ({items}) => {
   return (
@@ -24,10 +25,11 @@ const CardList = ({item}) => {
         <Card.Body>
           <Card.Title>{item.title}</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            {item.description}
           </Card.Text>
+          <Link to={`/Product/${item.id}`}>
           <Button variant="primary">Ver Detalle</Button>
+          </Link>
         </Card.Body>
       </Card>
     );
