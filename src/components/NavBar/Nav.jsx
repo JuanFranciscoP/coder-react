@@ -6,6 +6,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
+
   return (
     <div>
       <Navbar bg="dark" data-bs-theme="dark" expand="sm" className="bg-body-tertiary">
@@ -17,9 +18,9 @@ const NavBar = () => {
               <Nav.Link as={Link} to="/" >Inicio</Nav.Link>
               <Nav.Link as={Link} to="/About" >Nosotros</Nav.Link>
               <NavDropdown title="Categorias" id="basic-nav-dropdown">
-                <NavDropdown.Item as={Link} to="/">Camperas</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/">Remeras</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/">Calzado</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/product/category/electronics">Electronica</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/product/category/jewelery">Joyas</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/product/category/men's clothing">Ropa Masculina</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/">Accesorios</NavDropdown.Item>
               </NavDropdown>
             </Nav>

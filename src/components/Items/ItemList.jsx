@@ -1,39 +1,30 @@
 import React from 'react'
 import { Col } from 'react-bootstrap'
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import { Link } from 'react-router-dom';
+import CardProduct from './CardProduct';
 
-const ItemList = ({items}) => {
+const ItemList = ({items, category}) => {
+  const filteredProducts = category ? items.filter((item) => item.category === category ) : items;
+  
   return (
     <>
     {
-        items.map(item => {
-        return (
-            <Col md={4} lg={3} className="mt-4" key={item.id}><CardList item={item}/></Col>
-            )
+        filteredProducts.map((product)=> {
+
+          return (
+            
+              <Col md={4} lg={3} className="mt-4 container product-list" key={product.id} ><CardProduct item={product} category={category}/></Col>
+          
+            
+          )
+
         })
+          
+
     }
     </>
   )
 }
 
-const CardList = ({item}) => {
-    return (
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={item.image} />
-        <Card.Body>
-          <Card.Title>{item.title}</Card.Title>
-          <Card.Text>
-            {item.description}
-          </Card.Text>
-          <Link to={`/Product/${item.id}`}>
-          <Button variant="primary">Ver Detalle</Button>
-          </Link>
-        </Card.Body>
-      </Card>
-    );
-  }
 
 
 export default ItemList

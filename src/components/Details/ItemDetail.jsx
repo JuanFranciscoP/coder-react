@@ -6,8 +6,6 @@ const ItemDetail = ({item}) => {
         <p>{item.title}</p>
         <img src={item.image} alt={item.title} />
         <p>{item.description}</p>
-
-    
     </div>
   )
 }

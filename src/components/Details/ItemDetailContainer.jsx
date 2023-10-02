@@ -11,7 +11,7 @@ const ItemDetailContainer = ({id}) => {
     
         
     return (
-    <div>
+    <div className='producto'>
         { 
     item !== null &&
     <ItemDetail item={item}/>
