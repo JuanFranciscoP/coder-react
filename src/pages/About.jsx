@@ -5,13 +5,10 @@ import gatito from "../Img/gatito.jpg"
 const About = () => {
   return (
     
-      <Container className='nosotros'>
-      <h2 className='nosotros-text'>Sobre Nosotros</h2>
-      <div>
+      <div className='nosotros p-4'>
+      <h2 className='nosotros-text'>Sobre Nosotros</h2> 
       <img className='imagen-gato' src={gatito} alt="asd" />
       </div>
-      
-      </Container>
       
     
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import ItemDetailContainer from '../components/Details/ItemDetailContainer'
+import ItemDetailContainer from '../components/Items/Details/ItemDetailContainer'
 
 
 const Product = () => {
@@ -8,9 +8,8 @@ const Product = () => {
     
     return (
     
-    <div>
-        <ItemDetailContainer id={id}/>
-    </div>
+      <ItemDetailContainer id={id}/>
+    
   )
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import ItemDetail from './ItemDetail';
-import useFetch from '../../hooks/useFetch';
+import useFetch from '../../../hooks/useFetch';
+import ItemDetail from './ItemDetail'
 
 
 

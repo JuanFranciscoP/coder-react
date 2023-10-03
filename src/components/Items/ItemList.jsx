@@ -12,8 +12,9 @@ const ItemList = ({items, category}) => {
 
           return (
             
-              <Col md={4} lg={3} className="mt-4 container product-list" key={product.id} ><CardProduct item={product} category={category}/></Col>
-          
+            <Col md={4} lg={3} className="mt-4 container product-list" key={product.id}>
+                <CardProduct item={product} category={category} />
+            </Col>
             
           )
 

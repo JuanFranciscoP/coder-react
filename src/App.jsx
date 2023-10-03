@@ -16,8 +16,8 @@ function App() {
   
 
   return (
-    <div className='bg-dark'>
-      <Nav />
+    <div className='bg-dark contenedor'>
+      <Nav className="navbar" />
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />

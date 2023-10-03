@@ -1,3 +1,5 @@
+/* 
+
 .imagen-gato {
     display: block;
 
@@ -15,24 +17,19 @@
 .nosotros-text {
     margin-top: 4rem;
 }
-.product-list {
-    display: flex;
-    justify-content: space-between;
 
-}
 .producto {
     margin: auto;
     width: 60%;
     color: aliceblue;
     text-align: center;
     display: flex;
-    justify-content: center;
-}
+} 
+
 .producto img {
-    height: 40%;
+    max-width: 40%;
 }
 
-.card-product {
-    max-height: 30rem;
-}
-
+.card-img {
+    margin: auto;
+} */

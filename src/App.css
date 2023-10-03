@@ -1,0 +1,42 @@
+.contenedor {
+    height: 100%;
+}
+.navbar {
+    margin-bottom: 4rem;
+}
+
+.nosotros {
+    width: 50%;
+    margin: 5rem auto;
+    color: aliceblue;
+    text-align: center;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .19);
+}
+
+.nosotros img {
+    width: 30rem;
+}
+
+
+.nosotros-text {
+    margin-top: 4rem;
+}
+
+.producto {
+    margin: auto;
+    width: 60%;
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+} 
+
+
+
+.card-img {
+    margin: auto;
+}
+
+.list-title {
+    color: aliceblue;
+    text-align: center;
+}

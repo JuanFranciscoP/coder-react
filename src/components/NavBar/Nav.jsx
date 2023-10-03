@@ -21,7 +21,7 @@ const NavBar = () => {
                 <NavDropdown.Item as={Link} to="/product/category/electronics">Electronica</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/product/category/jewelery">Joyas</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/product/category/men's clothing">Ropa Masculina</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/">Accesorios</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/product/category/women's clothing">Ropa Femenina</NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
