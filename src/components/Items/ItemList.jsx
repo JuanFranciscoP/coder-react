@@ -1,6 +1,8 @@
 import React from 'react'
-import { Col } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import CardProduct from './CardProduct';
+import NewCardProduct from './NewCardProduct';
+
 
 const ItemList = ({items, category}) => {
   const filteredProducts = category ? items.filter((item) => item.category === category ) : items;
@@ -12,9 +14,15 @@ const ItemList = ({items, category}) => {
 
           return (
             
-            <Col md={4} lg={3} className="mt-4 container product-list" key={product.id}>
+              
+              <Col md={4} lg={3} className="mt-4 container product-list" key={product.id}>
                 <CardProduct item={product} category={category} />
-            </Col>
+              </Col>
+
+              
+
+            
+            
             
           )
 

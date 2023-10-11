@@ -1,42 +1,220 @@
-.contenedor {
-    height: 100%;
-}
-.navbar {
-    margin-bottom: 4rem;
+:root {
+    --primario: #fff0e5;
+    --primarioOscuro: #D4A373;
+    --secundario: #723d46;
+    --blanco: #FFF;
+    --negro: #000;
+    --gris: #a39393;
+    --fuentePrincipal: 'Staatliches', cursive;
 }
 
+
+/************** Navbar *************/
+.navbar {
+    background-color: var(--primarioOscuro);
+    
+}
+
+.navbar a {
+    color: var(--primario);
+}
+
+.navbar a:hover{
+    color: var(--secundario);
+}
+.dropdown a {
+    color: var(--secundario);
+}
+
+.dropdown a:hover{
+    background-color: var(--primarioOscuro);
+    color: var(--primario);
+}
+.body {
+    height: 100%;
+    min-width: 100%;
+    min-height: 100vh;
+    background: var(--primario);
+}
+
+
+
 .nosotros {
-    width: 50%;
-    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
     color: aliceblue;
     text-align: center;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, .19);
 }
 
 .nosotros img {
     width: 30rem;
+    border-radius: 5%;
 }
 
 
 .nosotros-text {
-    margin-top: 4rem;
+    color: var(--secundario);
+    text-align: center;
+    padding-top:4rem;
 }
 
 .producto {
     margin: auto;
     width: 60%;
-    color: aliceblue;
+    color: var(--gris);
     text-align: center;
     display: flex;
 } 
 
-
-
-.card-img {
-    margin: auto;
+.producto img {
+    width: 30%;
 }
 
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 4rem ;
+}
+
+
+
 .list-title {
-    color: aliceblue;
+    color: var(--secundario);
+    text-transform: capitalize;
     text-align: center;
+    margin:4rem auto;
+}
+
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 25rem;
+    background-color: var(--primarioOscuro);
+    overflow: inherit;
+    margin: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover {
+        box-shadow: 1rem .5rem 2rem .5rem black;
+        background-image: url(./assets/Img/noise.png);
+}
+.card-img {
+    margin-top: 1rem;
+    align-self: center;
+    width: 60%;
+    background-color: var(--primario);
+    border-radius: .5rem;
+    transition: .3s ease;
+}
+
+
+.card:hover .card-img {
+            transform: translateY(-25%);
+            box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}
+
+
+
+
+
+
+
+.text-body {
+            font-size: 1.5rem;
+            padding-bottom: 10px;
+    }
+
+.text-title {
+        font-weight: 900;
+        font-size: 20rem;
+        line-height: 1.5;
+}
+
+.card-footer {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border-top: 1px solid rgb(22, 22, 22);
+}
+        
+.card-button {
+            margin-bottom: auto;
+            border: 1px solid #252525;
+            padding: .3em;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+}
+            
+.card-link {
+    color: var(--secundario);
+}
+.card-link:hover{
+    color: var(--primario);
+}
+.card-footer:hover {
+                border: 1px solid #ffcaa6;
+                background-color: var(--secundario);
+}
+
+
+/******************** Footer *********************/
+
+
+.footer {
+    background-color: var(--primarioOscuro);
+    padding: 4rem 2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+    
+.footer img {
+    height: 4rem;
+    width: 4rem;
+}   
+    
+        
+            
+.social__logo {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;  
+    
+}
+.social {
+    font-size: 1.5rem;
+    width: 20rem;
+    text-align: center;
+}
+
+.footer__texto {
+    margin: auto;
+    text-align: center;
+    color: var(--primario);
+}
+.footer ul {
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+.footer ul a {
+    text-decoration: none;
+    color: var(--primario);
+    transition: .5s;
+} 
+
+.footer ul a:hover {
+    color: var(--secundario);
+    
+}
+
+.footer p {   
+        color: var(--primario);
 }

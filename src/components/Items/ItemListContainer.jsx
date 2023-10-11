@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Container from 'react-bootstrap/Container';
-import { Row, Col } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import ItemList from './ItemList';
 import useFetch from '../../hooks/useFetch';
 import { useParams } from 'react-router-dom';
@@ -15,7 +15,7 @@ const ItemListContainer = () => {
     },[category])
 
   return (
-    <Container>
+    <Container className='container'>
       <h2 className='list-title'>{title}</h2>
         <Row>
         

@@ -1,14 +1,16 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
-import gatito from "../Img/gatito.jpg"
+import gatito from "../assets/Img/gatito.jpg"
 
 const About = () => {
   return (
-    
-      <div className='nosotros p-4'>
-      <h2 className='nosotros-text'>Sobre Nosotros</h2> 
-      <img className='imagen-gato' src={gatito} alt="asd" />
-      </div>
+    <div>
+        <h2 className='nosotros-text'>Sobre Nosotros</h2>
+        <div className='nosotros p-4'> 
+        <img className='imagen-gato' src={gatito} alt="asd" />
+        </div>
+
+    </div>
+      
       
     
   )

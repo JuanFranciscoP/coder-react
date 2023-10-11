@@ -9,7 +9,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <Navbar bg="dark" data-bs-theme="dark" expand="sm" className="bg-body-tertiary">
+      <Navbar  expand="sm" className="navbar">
         <Container>
           <Navbar.Brand as={Link} to="/">Tienda Online</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -17,7 +17,7 @@ const NavBar = () => {
             <Nav className="me-auto">
               <Nav.Link as={Link} to="/" >Inicio</Nav.Link>
               <Nav.Link as={Link} to="/About" >Nosotros</Nav.Link>
-              <NavDropdown title="Categorias" id="basic-nav-dropdown">
+              <NavDropdown title="Categorias" className="dropdown" id="basic-nav-dropdown">
                 <NavDropdown.Item as={Link} to="/product/category/electronics">Electronica</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/product/category/jewelery">Joyas</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/product/category/men's clothing">Ropa Masculina</NavDropdown.Item>
