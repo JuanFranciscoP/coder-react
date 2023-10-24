@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import CardProduct from './CardProduct';
-import NewCardProduct from './NewCardProduct';
+
 
 
 const ItemList = ({items, category}) => {
@@ -15,7 +15,7 @@ const ItemList = ({items, category}) => {
           return (
             
               
-              <Col md={4} lg={3} className="mt-4 container product-list" key={product.id}>
+              <Col md={4} lg={3} className="mt-4 product-list" key={product.id}>
                 <CardProduct item={product} category={category} />
               </Col>
 

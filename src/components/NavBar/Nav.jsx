@@ -4,16 +4,22 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import { Link } from "react-router-dom";
+import { BsCart3 } from "react-icons/bs";
+import { useContext } from "react";
+import CartContext from "../../Context/CartContext";
+
+
 
 const NavBar = () => {
+  const {cartItems} = useContext(CartContext);
 
   return (
     <div>
-      <Navbar  expand="sm" className="navbar">
+      <Navbar className="navbar"  expand="sm" >
         <Container>
           <Navbar.Brand as={Link} to="/">Tienda Online</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Collapse id="basic-navbar-nav navbar-shop">
             <Nav className="me-auto">
               <Nav.Link as={Link} to="/" >Inicio</Nav.Link>
               <Nav.Link as={Link} to="/About" >Nosotros</Nav.Link>
@@ -24,6 +30,7 @@ const NavBar = () => {
                 <NavDropdown.Item as={Link} to="/product/category/women's clothing">Ropa Femenina</NavDropdown.Item>
               </NavDropdown>
             </Nav>
+            <Nav.Link as={Link} className="cart-icon" to="/cart"><BsCart3/><span>{cartItems()}</span></Nav.Link>
           </Navbar.Collapse>
         </Container>
       </Navbar>

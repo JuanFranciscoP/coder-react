@@ -4,7 +4,7 @@ import gatito from "../assets/Img/gatito.jpg"
 const About = () => {
   return (
     <div>
-        <h2 className='nosotros-text'>Sobre Nosotros</h2>
+        <h2 className='list-title'>Sobre Nosotros</h2>
         <div className='nosotros p-4'> 
         <img className='imagen-gato' src={gatito} alt="asd" />
         </div>
