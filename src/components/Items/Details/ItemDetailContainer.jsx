@@ -8,7 +8,7 @@ import ItemDetail from './ItemDetail'
 
 
 const ItemDetailContainer = ({id}) => {
-    const {addItem, cart} = useContext(CartContext);
+    const {addItem} = useContext(CartContext)
     const [item] = useFetch(`https://fakestoreapi.com/products/${id}`)
     const onAdd = (q) => {
         addItem(item,q)

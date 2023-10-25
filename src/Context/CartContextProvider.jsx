@@ -7,28 +7,21 @@ const CartContextProvider = ({children}) => {
   
     const [cart,setCart] = useState([]);
     
-    const cartItems = () =>{
-      return cart.reduce((acc,prod) => acc + prod.q,0);
-    };
-
-    useEffect(()=> {
-      cartItems()
-    },[cartItems])
     
+    const cartItems = () => {
+      return cart.reduce((acc,prod) => acc + prod.q,0)
+    }
     
     const addItem = (item,q) => {
       const isInCart = cart.find((prod)=> prod.id === item.id);
 
-  console.log(isInCart)
-        if(isInCart) {
-
+        if (isInCart) {
             isInCart.q += q;
-          
+            setCart([...cart])
         } 
         else {
                 setCart([...cart,{...item,q}])
             }
-
     }
   const values = {
     cart,

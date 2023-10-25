@@ -8,7 +8,6 @@ import Product from "./pages/Product";
 import ItemListContainer from "./components/Items/ItemListContainer";
 import Footer from "./components/Footer/Footer";
 import Cart from "./pages/Cart";
-import CartContext from "./Context/CartContext";
 import CartContextProvider from "./Context/CartContextProvider";
 
 function App() {
