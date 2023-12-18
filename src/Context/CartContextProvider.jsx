@@ -18,10 +18,12 @@ const CartContextProvider = ({children}) => {
         if (isInCart) {
             isInCart.q += q;
             setCart([...cart])
+            
         } 
         else {
                 setCart([...cart,{...item,q}])
             }
+        
     }
   const values = {
     cart,

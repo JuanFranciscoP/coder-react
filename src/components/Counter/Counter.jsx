@@ -19,7 +19,7 @@ const Counter = ({onAdd}) => {
         <button className='button' onClick={decrement}>-</button>
         <span className='product-span'>{count}</span>
         <button className='button' onClick={increment}>+</button>
-        <button className='button' onClick={()=>{onAdd(count)}}>Agregar Al Carrito</button>
+        <button className='button' onClick={()=>{onAdd(count,setCount)}}>Agregar Al Carrito</button>
     </div>
   )
 }

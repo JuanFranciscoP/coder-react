@@ -37,7 +37,7 @@ const Carrito = () => {
                                     <td>
                                         <img className="cart-img" src={prod.image} alt="" />
                                     </td>
-                                    <td>${prod.q * prod.price}</td>
+                                    <td>${parseFloat(prod.q * prod.price).toFixed(2)}</td>
                                     <td>
                                         <Link>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="delete-icon bi bi-trash-fill" viewBox="0 0 16 16">
